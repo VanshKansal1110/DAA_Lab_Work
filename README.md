@@ -1,8 +1,8 @@
 # Algorithms Repository
 
-## 👋 Introduction
+## Introduction
 
-Hi, I’m **Vansh**. This repository is a collection of classical algorithms implemented as part of my academic coursework. The primary goal of this project is **learning, clarity, and correctness**—each algorithm is written in a clean and understandable manner so that anyone with basic programming knowledge can follow along.
+I’m **Vansh Kansal, UE243120**. This repository is a collection of classical algorithms implemented as part of my academic coursework. The primary goal of this project is **learning, clarity, and correctness**—each algorithm is written in a clean and understandable manner so that anyone with basic programming knowledge can follow along.
 
 ---
 
@@ -186,84 +186,76 @@ Space Complexity:
 ## 📄 File: 8_MissingNumber.cpp
 
 Problem Statement:
-Find the missing number in an array containing values from 0 to n.
+```Find the missing number in an array containing values from 0 to n.```
 
 Solution Overview:
-Elements are placed at their correct indices, and the mismatch index indicates the missing value.
+```Elements are placed at their correct indices, and the mismatch index indicates the missing value.```
 
 Algorithm Used:
-Index mapping (in-place)
+```Index mapping (in-place)```
 
 Time Complexity:
-
-O(n)
+```O(n)```
 
 Space Complexity:
-
-O(1)
+```O(1)```
 
 -----------------------------------------------------------------------------------------
 
 ## 📄 File: 9_PowerCalculator.cpp
 
 Problem Statement:
-Compute the power of a number using recursion, including negative powers.
+```Compute the power of a number using recursion, including negative powers.```
 
 Solution Overview:
-Fast exponentiation is used to reduce computation by dividing the power into halves.
+```Fast exponentiation is used to reduce computation by dividing the power into halves.```
 
 Algorithm Used:
-Recursive fast exponentiation
+```Recursive fast exponentiation```
 
 Time Complexity:
-
-O(log n)
+```O(log n)```
 
 Space Complexity:
-
-O(log n)
+```O(log n)```
 
 -----------------------------------------------------------------------------------------
 
 ## 📄 File: 10_NumOfBounces.cpp
 
 Problem Statement:
-Calculate the number of bounces a ball makes until its velocity falls below a threshold.
+```Calculate the number of bounces a ball makes until its velocity falls below a threshold.```
 
 Solution Overview:
-Velocity is reduced recursively after each bounce until the stopping condition is met.
+````Velocity is reduced recursively after each bounce until the stopping condition is met.```
 
 Algorithm Used:
-Recursive simulation
+```Recursive simulation```
 
 Time Complexity:
-
-O(k)
+```O(k)```
 
 Space Complexity:
-
-O(k)
+```O(k)```
 
 -----------------------------------------------------------------------------------------
 
 ## 📄 File: 11_FirstDuplicateNumber.cpp
 
 Problem Statement:
-Find the index of the first duplicate element in an array.
+```Find the index of the first duplicate element in an array.```
 
 Solution Overview:
-Each element is compared with previously encountered values to detect the earliest duplicate.
+```Each element is compared with previously encountered values to detect the earliest duplicate.```
 
 Algorithm Used:
-Nested loop comparison
+```Nested loop comparison```
 
 Time Complexity:
-
-O(n²)
+```O(n²)```
 
 Space Complexity:
-
-O(1)
+```O(1)```
 
 -----------------------------------------------------------------------------------------
 
