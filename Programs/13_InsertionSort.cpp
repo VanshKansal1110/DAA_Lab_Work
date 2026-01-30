@@ -5,7 +5,6 @@ void insertionSort(int *arr, int size)
 {
     for (int i = 1; i < size; i++)
     {
-        // int num = arr[i];
         for (int j = i - 1; j >= 0; j--)
         {
             if (arr[j] > arr[j+1])
