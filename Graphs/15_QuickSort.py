@@ -1,16 +1,30 @@
 import time
-import matplotlib.pyplot as plt
+import math
+import matplotlib.pyplot as plt 
 
-def insertion_sort(arr):
-    size = len(arr)
-    for i in range(1, size):
-        for j in range(i - 1, -1, -1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-            else:
-                break
+def quickSort(l, s, e):
+    if s >= e:
+        return
 
-n_values = [1000,100, 300, 500, 1500, 2800, 200, 3000, 3500, 4000, 800, 1600, 3200,0]
+    pivot = l[s]
+    i = s + 1
+    j = e
+
+    while True:
+        while i <= e and l[i] <= pivot:
+            i += 1
+        while l[j] > pivot:
+            j -= 1
+        if i >= j:
+            break
+        l[i], l[j] = l[j], l[i]
+
+    l[s], l[j] = l[j], l[s]
+
+    quickSort(l, s, j - 1)
+    quickSort(l, j + 1, e)
+
+n_values = [100, 200, 300, 500, 800]
 n_values=sorted(n_values)
 best_times = []
 worst_times = []
@@ -19,17 +33,17 @@ for n in n_values:
     # Best Case: already sorted
     best_arr = list(range(n))
     start = time.perf_counter()
-    insertion_sort(best_arr)
+    quickSort(best_arr,0,n-1)
     best_times.append(time.perf_counter() - start)
 
     # Worst Case: reverse sorted
     worst_arr = list(range(n, 0, -1))
     start = time.perf_counter()
-    insertion_sort(worst_arr)
+    quickSort(worst_arr,0,n-1)
     worst_times.append(time.perf_counter() - start)
 
 # Assumed complexity curves
-best_assumed = [n for n in n_values]        # O(n)
+best_assumed = [n * math.log2(n) for n in n_values]        # O(n.logn)
 worst_assumed = [n*n for n in n_values]     # O(n^2)
 
 # Normalize assumed curves
@@ -48,7 +62,7 @@ plt.plot(n_values, worst_assumed, '--', label="O(n²)")
 
 plt.xlabel("Input Size (n)")
 plt.ylabel("Time (seconds)")
-plt.title("Insertion Sort: Best & Worst Case Analysis")
+plt.title("Quick Sort: Best & Worst Case Analysis")
 plt.legend()
 plt.grid(True)
 plt.show()
