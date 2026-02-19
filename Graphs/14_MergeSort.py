@@ -29,7 +29,6 @@ def mergeSort(l,s,e):
     mergeSort(l, s, m)
     mergeSort(l, m + 1, e)
     merge(l, s, m, e)
-    return l
 
 n_values = [1000,100, 300, 500, 1500, 2800, 200, 3000, 3500, 4000, 800, 1600, 3200]
 n_values=sorted(n_values)
