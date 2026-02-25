@@ -17,7 +17,19 @@ Each program includes:
 * Well-commented code (where applicable)
 * Time and space complexity analysis
 
-> **Language Used:** C++
+> **Language Used:**    C++,     Python
+
+The repository is organized into:
+
+- **Programs/** → Core algorithm implementations  
+- **Graphs/** → Python-based visualizations illustrating algorithm behavior and performance  
+
+This makes the repository suitable for:
+
+- Academic evaluation  
+- Technical interviews  
+- Concept revision  
+- Algorithm visualization and experimentation  
 
 ---
 
@@ -26,18 +38,41 @@ Each program includes:
 ```
 Algorithms-Repository/
 │
-├── 1_Sum_Of_N_Numbers.cpp
-├── 2_TowerOfHanoi.cpp
-├── 3_LinearSearch.cpp
-├── 4_TruthTable.cpp
-├── 5_HornerRule.cpp
-├── 6_SelectionSort.cpp
-├── 7_PermutationFinder.cpp
-├── 8_MissingNumber.cpp
-├── 9_PowerCalculator.cpp
-├── 10_NumOfBounces.cpp
-├── 11_FirstDuplicateNumber.cpp
+├───Programs/
+│├── 1_Sum_Of_N_Numbers.cpp
+│├── 2_TowerOfHanoi.cpp
+│├── 3_LinearSearch.cpp
+│├── 4_TruthTable.cpp
+│├── 5_HornerRule.cpp
+│├── 6_SelectionSort.cpp
+│├── 7_PermutationGenerator.cpp
+│├── 8_MissingNumber.cpp
+│├── 9_PowerCalculator.cpp
+│├── 10_NumOfBounces.cpp
+│├── 11_FirstDuplicateNumber.cpp
+│├── 12_BinarySearch.cpp
+│├── 13_InsertionSort.cpp
+│├── 14_MergeSort.py
+│├── 15_QuickSort.py
+│├── 16_Min_Max_By_D&C.py
 │
+├───Graphs/
+│├── 1_Sum_Of_N_Numbers.cpp
+│├── 2_TowerOfHanoi.cpp
+│├── 3_LinearSearch.cpp
+│├── 4_TruthTable.cpp
+│├── 5_HornerRule.cpp
+│├── 6_SelectionSort.cpp
+│├── 7_PermutationGenerator.cpp
+│├── 8_MissingNumber.cpp
+│├── 9_PowerCalculator.cpp
+│├── 10_NumOfBounces.cpp
+│├── 11_FirstDuplicateNumber.cpp
+│├── 12_BinarySearch.cpp
+│├── 13_InsertionSort.cpp
+│├── 14_MergeSort.py
+│├── 15_QuickSort.py
+│├── 16_Min_Max_By_D&C.py
 └── README.md
 
 ```
