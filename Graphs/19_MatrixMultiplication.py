@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 def add(X, Y):
     n = len(X)
     return [[X[i][j] + Y[i][j] for j in range(n)] for i in range(n)]
@@ -35,7 +37,6 @@ def matrix_multiply_D_AND_C(A, B):
     for i in range(mid):
         C.append(C21[i] + C22[i])
 
-    return C
 
 def matrix_multiply_By_Strassen(A,B):
     n = len(A)
@@ -75,12 +76,11 @@ def matrix_multiply_By_Strassen(A,B):
     for i in range(mid):
         C.append(C21[i] + C22[i])
 
-    return C
 
+matrix_sizes = [2, 4, 8, 16, 32, 64]
+
+time_D_And_C=list()
+time_Strassen=list()
+
+for i in matrix_sizes:
     
-A=[[72,-45, 63,-81],[-56,94,-37,68],[89,-22,51,-74],[-93,67,-58,102]]
-B=[[-84,59, -71,96],[43,-112,65,-39],[-97,54,88,-61],[76,-48,33,119]]
-C=matrix_multiply_D_AND_C(A,B)
-D=matrix_multiply_By_Strassen(A,B)
-print(C)
-print(D)

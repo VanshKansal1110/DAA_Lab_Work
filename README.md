@@ -55,6 +55,9 @@ Algorithms-Repository/
 │├── 14_MergeSort.py
 │├── 15_QuickSort.py
 │├── 16_Min_Max_By_D&C.py
+│├── 17_Knapsack.py
+│├── 18_ConvexHull.py
+│├── 19_MatrixMultiplication.py
 │
 ├───Graphs/
 │├── 1_Sum_Of_N_Numbers.cpp
@@ -73,6 +76,9 @@ Algorithms-Repository/
 │├── 14_MergeSort.py
 │├── 15_QuickSort.py
 │├── 16_Min_Max_By_D&C.py
+│├── 17_Knapsack.py
+│├── 18_ConvexHull.py
+│├── 19_MatrixMultiplication.py
 └── README.md
 
 ```
