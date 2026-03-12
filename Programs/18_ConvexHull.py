@@ -21,7 +21,7 @@ def find_hull(points, a, b, hull):
 def convex_hull(points):
     if len(points) <= 2:
         return points
-
+ 
     min_x = min(points, key=lambda p: p[0])
     max_x = max(points, key=lambda p: p[0])
 
@@ -37,6 +37,7 @@ def convex_hull(points):
 
     return list(hull)
 
+#Done by Quick_Hull
 points = [(0, 0), (4, 0), (4, 4), (0, 4), (0, 0), (4, 4)]
 hull = convex_hull(points)
 print(hull)

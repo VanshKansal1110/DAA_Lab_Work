@@ -56,13 +56,13 @@ def matrix_multiply_By_Strassen(A,B):
     B22 = [row[mid:] for row in B[mid:]]
     
     
-    M1=matrix_multiply_D_AND_C(add(A11,A22),add(B11,B22))
-    M2=matrix_multiply_D_AND_C(add(A21,A22),B11)
-    M3=matrix_multiply_D_AND_C(A11,subtract(B12,B22))
-    M4=matrix_multiply_D_AND_C(A22,subtract(B21,B11))
-    M5=matrix_multiply_D_AND_C(add(A11,A12),B22)
-    M6=matrix_multiply_D_AND_C(subtract(A21,A11),add(B11,B12))
-    M7=matrix_multiply_D_AND_C(subtract(A12,A22),add(B21,B22))
+    M1=matrix_multiply_By_Strassen(add(A11,A22),add(B11,B22))
+    M2=matrix_multiply_By_Strassen(add(A21,A22),B11)
+    M3=matrix_multiply_By_Strassen(A11,subtract(B12,B22))
+    M4=matrix_multiply_By_Strassen(A22,subtract(B21,B11))
+    M5=matrix_multiply_By_Strassen(add(A11,A12),B22)
+    M6=matrix_multiply_By_Strassen(subtract(A21,A11),add(B11,B12))
+    M7=matrix_multiply_By_Strassen(subtract(A12,A22),add(B21,B22))
     
     C11=subtract(add(add(M1,M4),M7),M5)
     C12=add(M3,M5)
