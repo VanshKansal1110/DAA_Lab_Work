@@ -262,3 +262,373 @@ Graph Analysis:
 ```The graph demonstrates quadratic growth of execution time as the input size increases. The experimental results follow the expected O(n²) complexity curve.```
 
 ----------------------------------------------------------------------------------------
+
+## 📄 File: 7_PermutationGenerator.cpp
+
+Problem Statement:
+```Generate all possible permutations of a given string.```
+
+Solution Overview:
+```The algorithm recursively swaps characters in the string and explores all possible arrangements. After fixing one character at a position, it recursively generates permutations for the remaining substring.```
+
+Algorithm Used:
+```Recursive Permutation Generation (Backtracking)```
+
+Time Complexity:
+```O(n!)```
+
+Space Complexity:
+```O(n) (recursion stack)```
+
+Visualization Script:
+```Graphs/7_PermutationGenerator.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/7_PermutationGenerator.png```
+
+Graph Analysis:
+```The graph shows factorial growth as the input size increases. The number of permutations generated grows extremely fast, confirming the theoretical complexity of O(n!).```
+
+----------------------------------------------------------------------------------------
+
+## 📄 File: 8_MissingNumber.cpp
+
+Problem Statement:
+```Find the missing number from an array containing values from 0 to n.```
+
+Solution Overview:
+```The algorithm rearranges elements so that each value is placed at its corresponding index. When an element is not at its correct position, it swaps with the value at its target index. The index where mismatch occurs represents the missing number.```
+
+Algorithm Used:
+```Index Mapping (Cyclic Placement Technique)```
+
+Time Complexity:
+```O(n)```
+
+Space Complexity:
+```O(1)```
+
+Visualization Script:
+```Graphs/8_MissingNumber.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/8_MissingNumber.png```
+
+Graph Analysis:
+```The graph demonstrates a linear increase in operations relative to input size. The experimental data aligns closely with the theoretical O(n) time complexity.```
+
+----------------------------------------------------------------------------------------
+
+## 📄 File: 9_PowerCalculator.cpp
+
+Problem Statement:
+```Compute the power of a number using an efficient recursive algorithm.```
+
+Solution Overview:
+```The algorithm uses fast exponentiation. Instead of multiplying the base repeatedly, it squares the base and halves the exponent, significantly reducing the number of recursive calls.```
+
+Algorithm Used:
+```Fast Exponentiation (Exponentiation by Squaring)```
+
+Time Complexity:
+```O(log n)```
+
+Space Complexity:
+```O(log n)```
+
+Visualization Script:
+```Graphs/9_PowerCalculator.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/9_PowerCalculator.png```
+
+Graph Analysis:
+```The graph confirms logarithmic growth in the number of recursive calls as the exponent increases, validating the O(log n) complexity.```
+
+----------------------------------------------------------------------------------------
+
+## 📄 File: 10_NumOfBounces.cpp
+
+Problem Statement:
+```Determine how many times a ball will bounce before its velocity falls below a given threshold.```
+
+Solution Overview:
+```The algorithm recursively reduces the velocity after each bounce using a fixed decay factor until the velocity becomes less than or equal to the stopping threshold.```
+
+Algorithm Used:
+```Recursive Simulation```
+
+Time Complexity:
+```O(log v)```
+
+Space Complexity:
+```O(log v)```
+
+Visualization Script:
+```Graphs/10_NumOfBounces.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/10_NumOfBounces.png```
+
+Graph Analysis:
+```The graph illustrates logarithmic behavior since the velocity decreases exponentially after each bounce. The number of recursive calls grows slowly relative to the initial velocity.```
+
+----------------------------------------------------------------------------------------
+
+## 📄 File: 11_FirstDuplicateNumber.cpp
+
+Problem Statement:
+```Find the index of the first duplicate element in an array.```
+
+Solution Overview:
+```The algorithm compares each element with all previously visited elements to detect the earliest duplicate occurrence.```
+
+Algorithm Used:
+```Nested Loop Comparison```
+
+Time Complexity:
+```O(n²)```
+
+Space Complexity:
+```O(1)```
+
+Visualization Script:
+```Graphs/11_FirstDuplicateNumber.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/11_FirstDuplicateNumber.png```
+
+Graph Analysis:
+```The graph displays quadratic growth in comparisons as the array size increases, confirming the theoretical O(n²) time complexity.```
+
+----------------------------------------------------------------------------------------
+
+## 📄 File: 12_BinarySearch.cpp
+
+Problem Statement:
+```Search for a target value in a sorted array using the binary search technique.```
+
+Solution Overview:
+```Binary search repeatedly divides the search interval in half. If the target value is smaller than the middle element, the search continues in the left half; otherwise, it continues in the right half.```
+
+Algorithm Used:
+```Recursive Binary Search```
+
+Time Complexity:
+```O(log n)```
+
+Space Complexity:
+```O(log n)```
+
+Visualization Script:
+```Graphs/12_BinarySearch.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/12_BinarySearch.png```
+
+Graph Analysis:
+```The graph demonstrates logarithmic growth in recursive calls, confirming the expected O(log n) performance.```
+
+----------------------------------------------------------------------------------------
+
+## 📄 File: 13_InsertionSort.cpp
+
+Problem Statement:
+```Sort an array using the Insertion Sort algorithm.```
+
+Solution Overview:
+```The algorithm builds the sorted array one element at a time by inserting each element into its correct position in the already sorted portion of the array.```
+
+Algorithm Used:
+```Insertion Sort```
+
+Time Complexity:
+```Best Case: O(n)```
+```Average Case: O(n²)```
+```Worst Case: O(n²)```
+
+Space Complexity:
+```O(1)```
+
+Visualization Script:
+```Graphs/13_InsertionSort.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/13_InsertionSort.png```
+
+Graph Analysis:
+```The graph shows linear behavior in the best case and quadratic behavior in the worst case, matching the theoretical complexity of insertion sort.```
+
+----------------------------------------------------------------------------------------
+
+## 📄 File: 14_MergeSort.py
+
+Problem Statement:
+```Sort a list of numbers using the Merge Sort algorithm.```
+
+Solution Overview:
+```Merge sort divides the array into two halves recursively, sorts each half, and then merges the sorted halves to produce the final sorted array.```
+
+Algorithm Used:
+```Divide and Conquer (Merge Sort)```
+
+Time Complexity:
+```Best Case: O(n log n)```
+```Worst Case: O(n log n)```
+
+Space Complexity:
+```O(n)```
+
+Visualization Script:
+```Graphs/14_MergeSort.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/14_MergeSort.png```
+
+Graph Analysis:
+```The graph follows the expected O(n log n) growth pattern. Both best and worst cases show similar performance due to the consistent divide-and-conquer process.```
+
+----------------------------------------------------------------------------------------
+
+## 📄 File: 15_QuickSort.py
+
+Problem Statement:
+```Sort a list of numbers using the Quick Sort algorithm.```
+
+Solution Overview:
+```The algorithm selects a pivot element and partitions the array so that elements smaller than the pivot appear before it and larger elements appear after it. The process is recursively applied to subarrays.```
+
+Algorithm Used:
+```Divide and Conquer (Quick Sort)```
+
+Time Complexity:
+```Best Case: O(n log n)```
+```Worst Case: O(n²)```
+
+Space Complexity:
+```O(log n)```
+
+Visualization Script:
+```Graphs/15_QuickSort.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/15_QuickSort.png```
+
+Graph Analysis:
+```The graph illustrates efficient performance in average cases with O(n log n) complexity, while worst-case inputs demonstrate quadratic growth.```
+
+----------------------------------------------------------------------------------------
+
+## 📄 File: 16_Min_Max_By_D&C.py
+
+Problem Statement:
+```Find the minimum and maximum values in an array using a divide-and-conquer approach.```
+
+Solution Overview:
+```The algorithm splits the array into two halves recursively, finds the minimum and maximum in each half, and combines the results by comparing the two minimums and two maximums.```
+
+Algorithm Used:
+```Divide and Conquer```
+
+Time Complexity:
+```O(n)```
+
+Space Complexity:
+```O(log n)```
+
+Visualization Script:
+```Graphs/16_Min_Max_By_D&C.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/16_Min_Max_By_D&C.png```
+
+Graph Analysis:
+```The graph confirms linear time complexity as the algorithm processes each element while minimizing the number of comparisons using divide-and-conquer.```
+
+----------------------------------------------------------------------------------------
+
+## 📄 File: 17_Knapsack.py
+
+Problem Statement:
+```Solve the Knapsack problem using different greedy strategies.```
+
+Solution Overview:
+```Three greedy strategies are implemented: sorting by profit-to-weight ratio, by weight, and by profit. The algorithm selects items greedily until the capacity constraint is reached.```
+
+Algorithm Used:
+```Greedy Algorithm```
+
+Time Complexity:
+```O(n log n)```
+
+Space Complexity:
+```O(n)```
+
+Visualization Script:
+```Graphs/17_Knapsack.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/17_Knapsack.png```
+
+Graph Analysis:
+```The graph compares different greedy strategies and shows how sorting criteria affect the total profit achieved for varying knapsack capacities.```
+
+----------------------------------------------------------------------------------------
+
+## 📄 File: 18_ConvexHull.py
+
+Problem Statement:
+```Determine the convex hull of a set of points in a two-dimensional plane.```
+
+Solution Overview:
+```The algorithm uses the QuickHull method, which recursively finds the farthest point from a line segment and divides the remaining points into subsets to construct the convex hull.```
+
+Algorithm Used:
+```Divide and Conquer (QuickHull)```
+
+Time Complexity:
+```Average Case: O(n log n)```
+```Worst Case: O(n²)```
+
+Space Complexity:
+```O(n)```
+
+Visualization Script:
+```Graphs/18_ConvexHull.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/18_ConvexHull.png```
+
+Graph Analysis:
+```The graph demonstrates the algorithm’s typical n log n behavior in average cases, while certain point configurations may produce quadratic complexity.```
+
+----------------------------------------------------------------------------------------
+
+## 📄 File: 19_MatrixMultiplication.py
+
+Problem Statement:
+```Multiply two matrices using both Divide-and-Conquer and Strassen's algorithm.```
+
+Solution Overview:
+```Two matrix multiplication approaches are implemented. The first uses the classical divide-and-conquer method, while the second applies Strassen's algorithm to reduce the number of multiplications required.```
+
+Algorithm Used:
+```Divide and Conquer & Strassen's Matrix Multiplication```
+
+Time Complexity:
+```Divide and Conquer: O(n³)```
+```Strassen's Algorithm: O(n^2.81)```
+
+Space Complexity:
+```O(n²)```
+
+Visualization Script:
+```Graphs/19_MatrixMultiplication.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/19_MatrixMultiplication.png```
+
+Graph Analysis:
+```The graph compares the execution times of the divide-and-conquer approach and Strassen's algorithm. For larger matrix sizes, Strassen's method becomes more efficient due to reduced multiplication operations.```
+
+----------------------------------------------------------------------------------------
