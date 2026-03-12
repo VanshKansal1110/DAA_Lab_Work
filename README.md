@@ -97,10 +97,10 @@ Problem Statement:
 ```Find the sum of all elements in a given array using recursion.```
 
 Solution Overview:
-```The program recursively adds array elements by advancing the pointer and reducing the size of the array until the base condition is reached.```
+```The program recursively traverses the array and adds each element to the total sum until the base condition is reached when the index equals the array length.```
 
 Algorithm Used:
-```Recursive array traversal```
+```Recursive Array Traversal```
 
 Time Complexity:
 ```O(n)```
@@ -108,15 +108,24 @@ Time Complexity:
 Space Complexity:
 ```O(n) (recursive call stack)```
 
------------------------------------------------------------------------------------------
+Visualization Script:
+```Graphs/1_SumOfNNumbers.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/1_SumOfNNumbers.png```
+
+Graph Analysis:
+```The plotted graph shows a linear relationship between the input size and the execution time. The actual execution time curve closely follows the expected O(n) theoretical curve, confirming the linear time complexity of the algorithm.```
+
+----------------------------------------------------------------------------------------
 
 ## 📄 File: 2_TowerOfHanoi.cpp
 
 Problem Statement:
-```Transfer n plates from the source stack to the destination stack using an auxiliary stack by following the rules of the Tower of Hanoi problem.```
+```Transfer n disks from the source rod to the destination rod using an auxiliary rod while following the rules of the Tower of Hanoi problem.```
 
 Solution Overview:
-```The solution uses recursion to move n-1 plates, transfer the largest plate, and then move the remaining plates, displaying each step clearly.```
+```The recursive solution divides the problem into smaller subproblems. First n−1 disks are moved to the auxiliary rod, then the largest disk is transferred to the destination rod, and finally the remaining disks are moved from the auxiliary rod to the destination rod.```
 
 Algorithm Used:
 ```Recursive Divide-and-Conquer```
@@ -127,7 +136,16 @@ Time Complexity:
 Space Complexity:
 ```O(n)```
 
------------------------------------------------------------------------------------------
+Visualization Script:
+```Graphs/2_TowerOfHanoi.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/2_TowerOfHanoi.png```
+
+Graph Analysis:
+```The graph demonstrates exponential growth in the number of operations as the number of disks increases. This behavior aligns with the theoretical time complexity O(2ⁿ).```
+
+----------------------------------------------------------------------------------------
 
 ## 📄 File: 3_LinearSearch.cpp
 
@@ -135,19 +153,29 @@ Problem Statement:
 ```Search for a target value in an array using the linear search technique.```
 
 Solution Overview:
-```The array is traversed sequentially until the target element is found or the array ends.```
+```The algorithm sequentially traverses the array and compares each element with the target value until a match is found or the array ends.```
 
 Algorithm Used:
 ```Linear Search```
 
 Time Complexity:
 ```Best Case: O(1)```
+```Average Case: O(n)```
 ```Worst Case: O(n)```
 
 Space Complexity:
 ```O(1)```
 
------------------------------------------------------------------------------------------
+Visualization Script:
+```Graphs/3_LinearSearch.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/3_LinearSearch.png```
+
+Graph Analysis:
+```The graph shows a linear increase in execution time as the array size increases. The measured execution time closely follows the theoretical O(n) curve.```
+
+----------------------------------------------------------------------------------------
 
 ## 📄 File: 4_TruthTable.cpp
 
@@ -155,10 +183,10 @@ Problem Statement:
 ```Generate a truth table for a given number of logical statements.```
 
 Solution Overview:
-```All possible combinations of truth values are generated using recursion by appending True and False until the required length is reached.```
+```The program recursively generates all possible combinations of truth values for the given number of logical variables. Each recursive step appends either True or False until the required length is reached.```
 
 Algorithm Used:
-```Recursive backtracking```
+```Recursive Backtracking```
 
 Time Complexity:
 ```O(2ⁿ)```
@@ -166,7 +194,16 @@ Time Complexity:
 Space Complexity:
 ```O(n)```
 
------------------------------------------------------------------------------------------
+Visualization Script:
+```Graphs/4_TruthTable.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/4_TruthTable.png```
+
+Graph Analysis:
+```The graph shows exponential growth in the number of generated combinations as the number of logical variables increases, matching the theoretical complexity O(2ⁿ).```
+
+----------------------------------------------------------------------------------------
 
 ## 📄 File: 5_HornerRule.cpp
 
@@ -174,7 +211,7 @@ Problem Statement:
 ```Evaluate a polynomial expression for a given value using Horner’s Rule.```
 
 Solution Overview:
-```The polynomial is evaluated in nested form using recursion to reduce the number of multiplications.```
+```Horner’s Rule evaluates the polynomial in nested form, reducing the number of multiplication operations required for polynomial evaluation.```
 
 Algorithm Used:
 ```Horner’s Method```
@@ -183,9 +220,18 @@ Time Complexity:
 ```O(n)```
 
 Space Complexity:
-```O(n)```
+```O(1)```
 
------------------------------------------------------------------------------------------
+Visualization Script:
+```Graphs/5_HornerRule.py```
+
+Graph Screenshot:
+```Graphs/Screenshots/5_HornerRule.png```
+
+Graph Analysis:
+```The graph illustrates linear time behavior as the polynomial degree increases. The measured execution times align closely with the theoretical O(n) complexity curve.```
+
+----------------------------------------------------------------------------------------
 
 ## 📄 File: 6_SelectionSort.cpp
 
@@ -193,110 +239,26 @@ Problem Statement:
 ```Sort an array using the Selection Sort algorithm implemented recursively.```
 
 Solution Overview:
-```The smallest element is selected and placed at the beginning in each recursive step.```
+```The algorithm repeatedly selects the smallest element from the unsorted portion of the array and swaps it with the first element. The remaining array is then sorted recursively.```
 
 Algorithm Used:
-```Selection Sort (Recursive)```
+```Recursive Selection Sort```
 
 Time Complexity:
-```O(n²)```
+```Best Case: O(n²)```
+```Average Case: O(n²)```
+```Worst Case: O(n²)```
 
 Space Complexity:
-```O(n)```
+```O(n) (recursive call stack)```
 
------------------------------------------------------------------------------------------
-## 📄 File: 7_PermutationFinder.cpp
+Visualization Script:
+```Graphs/6_SelectionSort.py```
 
-**Problem Statement:**
-```Generate all permutations of a given string.```
+Graph Screenshot:
+```Graphs/Screenshots/6_SelectionSort.png```
 
-Solution Overview:
-```Characters are swapped recursively to generate all possible permutations of the string.```
+Graph Analysis:
+```The graph demonstrates quadratic growth of execution time as the input size increases. The experimental results follow the expected O(n²) complexity curve.```
 
-Algorithm Used:
-```Recursive permutation generation```
-
-Time Complexity:
-```O(n!)```
-
-Space Complexity:
-```O(n)```
-
------------------------------------------------------------------------------------------
-
-## 📄 File: 8_MissingNumber.cpp
-
-Problem Statement:
-```Find the missing number in an array containing values from 0 to n.```
-
-Solution Overview:
-```Elements are placed at their correct indices, and the mismatch index indicates the missing value.```
-
-Algorithm Used:
-```Index mapping (in-place)```
-
-Time Complexity:
-```O(n)```
-
-Space Complexity:
-```O(1)```
-
------------------------------------------------------------------------------------------
-
-## 📄 File: 9_PowerCalculator.cpp
-
-Problem Statement:
-```Compute the power of a number using recursion, including negative powers.```
-
-Solution Overview:
-```Fast exponentiation is used to reduce computation by dividing the power into halves.```
-
-Algorithm Used:
-```Recursive fast exponentiation```
-
-Time Complexity:
-```O(log n)```
-
-Space Complexity:
-```O(log n)```
-
------------------------------------------------------------------------------------------
-
-## 📄 File: 10_NumOfBounces.cpp
-
-Problem Statement:
-```Calculate the number of bounces a ball makes until its velocity falls below a threshold.```
-
-Solution Overview:
-````Velocity is reduced recursively after each bounce until the stopping condition is met.```
-
-Algorithm Used:
-```Recursive simulation```
-
-Time Complexity:
-```O(k)```
-
-Space Complexity:
-```O(k)```
-
------------------------------------------------------------------------------------------
-
-## 📄 File: 11_FirstDuplicateNumber.cpp
-
-Problem Statement:
-```Find the index of the first duplicate element in an array.```
-
-Solution Overview:
-```Each element is compared with previously encountered values to detect the earliest duplicate.```
-
-Algorithm Used:
-```Nested loop comparison```
-
-Time Complexity:
-```O(n²)```
-
-Space Complexity:
-```O(1)```
-
------------------------------------------------------------------------------------------
-
+----------------------------------------------------------------------------------------
